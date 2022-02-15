@@ -28,7 +28,7 @@ while True:
         # Record Date
         RealTime = datetime.now()
         RealDateOpen = RealTime.strftime("Present Date: %B/%d/%Y \n")
-        RealTimeThen = RealTime.strftime("Current Time: %H:%M:%S")
+        RealTimeThen = RealTime.strftime("Latest Time: %H:%M:%S")
 
         MyTxt.write(f'{TheDataInside}\n{RealDateOpen}{RealTimeThen}')
         
