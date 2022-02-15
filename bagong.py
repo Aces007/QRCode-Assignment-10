@@ -22,9 +22,10 @@ while True:
         cv2.polylines(ItoQRKo,[Dimensions], True, (255,0,255), 5)
         # Record Date
         RealTime = datetime.now()
-        RealTimeOpen = RealTime.strftime("Present Date: %B/%d/%Y \n Current Time: %H:%M:%S")
+        RealDateOpen = RealTime.strftime("Present Date: %B/%d/%Y \n")
+        RealTimeThen = RealTime.strftime("Current Time: %H:%M:%S")
 
-        MyTxt.write(f'{TheDataInside} \n {RealTimeOpen}')
+        MyTxt.write(f'{TheDataInside}\n{RealDateOpen}{RealTimeThen}')
         
 
 
