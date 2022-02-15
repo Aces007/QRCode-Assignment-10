@@ -30,10 +30,11 @@ while True:
         RealDateOpen = RealTime.strftime("Present Date: %B/%d/%Y \n")
         RealTimeThen = RealTime.strftime("Latest Time: %H:%M:%S")
 
+
+        # Responsible for rewriting the contents of the code to the txt file I assigned above
         MyTxt.write(f'{TheDataInside}\n{RealDateOpen}{RealTimeThen}')
+    
         
-
-
     cv2.imshow('Result', ItoQRKo)
     cv2.waitKey(1)
 
