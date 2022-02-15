@@ -3,7 +3,7 @@ from datetime import datetime
 import cv2
 from pyzbar.pyzbar import decode
 
-# ItoQRKo = cv2.imread('frame.png')
+# Necessary for calling the webcam installed on your computer
 CameraTime = cv2.VideoCapture(0)
 CameraTime.set(3,640)
 CameraTime.set(4,480)
@@ -12,7 +12,7 @@ while True:
     success, ItoQRKo = CameraTime.read()
     for codes in decode(ItoQRKo):
         
-        # Resonsible for printing the data I inserted in the QR Code
+        # Responsible for printing the data I inserted in the QR Code
         print(codes.data)
         MyTxt = open('Personal.txt', 'w')
         TheDataInside = codes.data.decode('utf-8')
