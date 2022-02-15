@@ -12,7 +12,7 @@ while True:
     success, ItoQRKo = CameraTime.read()
     for codes in decode(ItoQRKo):
         
-        #Res
+        # Resonsible for printing the data I inserted in the QR Code
         print(codes.data)
         MyTxt = open('Personal.txt', 'w')
         TheDataInside = codes.data.decode('utf-8')
